@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mapr-tes-pvc1
+  namespace: mapr-csi
+spec:
+  storageClassName: mapr-sec-strcls
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1G
